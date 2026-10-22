@@ -7,6 +7,7 @@ Each flag looks like `flag{...}`.
 | Room | Challenge Rating | Est. time | Download |
 |---|---|---|---|
 | [Escape Room](escape-room/) | 🟢 CR 1 · Tavern Quest | 15–45 min | [`escape-room.tar.gz`](escape-room/escape-room.tar.gz) |
+| [The Copper Lantern](copper-lantern/) | 🟡 CR 5 · Dungeon Delve | 45–90 min | [`copper-lantern.tar.gz`](copper-lantern/copper-lantern.tar.gz) |
 
 More rooms are on the way. The dungeon is still being dug.
 
