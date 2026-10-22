@@ -4,11 +4,26 @@ Small, self-contained capture-the-flag rooms you play in your own terminal.
 No servers, no sign-ups: download a room, unpack it, and start looking around.
 Each flag looks like `flag{...}`.
 
-| Room | Difficulty | Download |
-|---|---|---|
-| [Escape Room](escape-room/) | Easy | [`escape-room.tar.gz`](escape-room/escape-room.tar.gz) |
+| Room | Challenge Rating | Est. time | Download |
+|---|---|---|---|
+| [Escape Room](escape-room/) | 🟢 CR 1 · Tavern Quest | 15–45 min | [`escape-room.tar.gz`](escape-room/escape-room.tar.gz) |
 
-More rooms are on the way.
+More rooms are on the way. The dungeon is still being dug.
+
+## Challenge Ratings
+
+Every room gets a rating, so you know whether to grab a torch or summon your
+whole party.
+
+| | Rating | What you're walking into |
+|---|---|---|
+| 🟢 | **CR 1 · Tavern Quest** | A gentle first adventure. If you can `ls`, `cd` and `cat`, you're ready to roll. Clues point the way, and nothing bites (hard). |
+| 🟡 | **CR 5 · Dungeon Delve** | Traps start chaining together. You'll need a few tricks from your spellbook and the patience to read the fine print. |
+| 🔴 | **CR 10 · Boss Fight** | Several techniques stacked, very few hints, and at least one red herring that looks *very* convincing. Bring potions. |
+| 🟣 | **CR 20 · Legendary** | For seasoned adventurers only. Expect misdirection, layered encodings and a puzzle or two that will cost you sleep. |
+
+Ratings are the dungeon master's best guess. If a room felt way harder or
+easier than its rating, open an issue and say so (spoiler-free, please).
 
 ## How to play
 
@@ -42,8 +57,9 @@ echo -n 'flag{your_answer_here}' | sha256sum      # Linux / WSL
 echo -n 'flag{your_answer_here}' | shasum -a 256  # macOS
 ```
 
-Matching hash: you've escaped. The hash can't be turned back into the flag, so
-it gives nothing away.
+Matching hash: natural 20, you've escaped. No match: the dice were not kind,
+keep looking. The hash can't be turned back into the flag, so it gives nothing
+away.
 
 ## House rules
 

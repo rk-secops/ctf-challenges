@@ -1,6 +1,6 @@
-# Escape Room
+# Escape Room · 🟢 CR 1
 
-**Difficulty:** Easy · **Platform:** Linux, macOS or WSL · **Time:** 15–45 minutes
+**Challenge Rating:** 🟢 CR 1 · Tavern Quest · **Platform:** Linux, macOS or WSL · **Time:** 15–45 minutes
 
 > You're locked in a small room. The flag is split into pieces scattered
 > around it. Nothing here is what it seems at first glance.
