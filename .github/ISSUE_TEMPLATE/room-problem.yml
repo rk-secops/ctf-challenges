@@ -1,0 +1,47 @@
+name: Problem with a room
+description: A broken step, a typo, a rating that feels off, or a room that won't unpack
+labels: ["room"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for playing! **Please keep this spoiler-free.** Describe *where*
+        you got stuck or what's broken, not the answer, so the next player
+        still gets their own "aha".
+
+        Found something that could harm a player's machine? Please use
+        [private vulnerability reporting](https://github.com/rk-secops/ctf-challenges/security/advisories/new) instead.
+  - type: dropdown
+    id: room
+    attributes:
+      label: Room
+      options:
+        - Escape Room
+        - The Copper Lantern
+        - Other / the repository itself
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - A step seems unsolvable
+        - Typo or unclear clue
+        - Archive won't download or unpack
+        - Rating feels too easy or too hard
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: Name the file or step, and what you expected. No flags or solutions, please.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Your setup
+      description: For example "Ubuntu 24.04", "macOS 15, Homebrew openssl", "Windows 11 + WSL"
