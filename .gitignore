@@ -1,0 +1,4 @@
+# Room sources contain the solutions (and unfinished rooms).
+# Only the built archives in <room>/ are published.
+src/
+__pycache__/
